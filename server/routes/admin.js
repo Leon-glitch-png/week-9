@@ -8,7 +8,7 @@ const { authenticateJwt } = require("../middleware/auth");
 const router = express.Router();
 
 router.get("/", (req, res)=>{
-  res.send("Welcome to my website");
+  res.send("Hi there, welcome to my website");
 })
 
 router.get("/me", authenticateJwt, async (req, res) => {
